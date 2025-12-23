@@ -2,6 +2,7 @@
 #include "stm32f10x_usart.h"
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_rcc.h"
+#include "public.h"
 
 #include <stdint.h>
 
@@ -93,6 +94,13 @@ void USART1_IRQHandler(void)
     {
         uint8_t c = (uint8_t)(USART_ReceiveData(USART1) & 0xFF);
 
+        /* 接收到 Ctrl+C (0x03) 时，置位打断标志并不入队 */
+        if (c == 0x03)
+        {
+            g_task_abort = 1;
+            return;
+        }
+
         uint16_t next = (rx_head + 1) % RX_BUFFER_SIZE;
         if (next != rx_tail) // 缓冲区未满
         {
@@ -100,8 +108,5 @@ void USART1_IRQHandler(void)
             rx_head = next;
         }
 
-        // 回显
-			printf("%c", (char)c);
-				
     }
 }

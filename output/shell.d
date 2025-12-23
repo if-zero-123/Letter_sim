@@ -1,0 +1,9 @@
+.\output\shell.o: APP\shell.c
+.\output\shell.o: APP\shell.h
+.\output\shell.o: APP\shell_cfg.h
+.\output\shell.o: APP\shell_cfg_user.h
+.\output\shell.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+.\output\shell.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\shell.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\shell.o: APP\shell_ext.h
+.\output\shell.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

@@ -24,7 +24,9 @@
             "*.cxx": "cpp",
             "*.cc": "cpp",
             "USART.C": "cpp",
-            "USART.H": "cpp"
+            "USART.H": "cpp",
+            "LED.C": "cpp",
+            "LED.H": "cpp"
         },
         "[yaml]": {
             "editor.insertSpaces": true,

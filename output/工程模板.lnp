@@ -13,6 +13,12 @@
 ".\output\led.o"
 ".\output\systick.o"
 ".\output\usart.o"
+".\output\shell_cmd_list.o"
+".\output\shell_companion.o"
+".\output\shell_ext.o"
+".\output\shell_port.o"
+".\output\cmd_demo.o"
+".\output\shell.o"
 --library_type=microlib --strict --scatter ".\output\¹¤³ÌÄ£°å.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

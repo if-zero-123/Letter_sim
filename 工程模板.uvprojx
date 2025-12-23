@@ -475,16 +475,6 @@
               <FilePath>.\APP\USART.C</FilePath>
             </File>
             <File>
-              <FileName>shell.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\一代一路\程序代码（文泉）\程序代码（文泉）\9 USART\APP\shell.c</FilePath>
-            </File>
-            <File>
-              <FileName>shell.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\一代一路\程序代码（文泉）\程序代码（文泉）\9 USART\APP\shell.h</FilePath>
-            </File>
-            <File>
               <FileName>LED.H</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\一代一路\程序代码（文泉）\程序代码（文泉）\9 USART\APP\LED.H</FilePath>
@@ -539,6 +529,21 @@
               <FileType>1</FileType>
               <FilePath>.\APP\cmd_demo.c</FilePath>
             </File>
+            <File>
+              <FileName>shell.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\shell.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\APP\shell.h</FilePath>
+            </File>
+            <File>
+              <FileName>shell_port.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\APP\shell_port.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -564,7 +569,7 @@
   <LayerInfo>
     <Layers>
       <Layer>
-        <LayName>&lt;Project Info&gt;</LayName>
+        <LayName>工程模板</LayName>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>

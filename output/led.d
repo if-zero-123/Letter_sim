@@ -1,5 +1,5 @@
 .\output\led.o: APP\LED.C
-.\output\led.o: APP\LED.h
+.\output\led.o: .\user\public.h
 .\output\led.o: .\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\output\led.o: .\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
 .\output\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -29,4 +29,7 @@
 .\output\led.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\output\led.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\output\led.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\output\led.o: APP\systick.h
+.\output\led.o: .\APP\LED.h
+.\output\led.o: .\APP\systick.h
+.\output\led.o: .\APP\USART.H
+.\output\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h

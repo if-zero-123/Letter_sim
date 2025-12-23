@@ -5,6 +5,6 @@
 #include "systick.h"
 
 void LEDInit(void);
-void LEDdisplay(void);
+void LEDdisplay(uint8_t times);
 
 #endif

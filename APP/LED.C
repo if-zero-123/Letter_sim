@@ -1,4 +1,4 @@
-#include "LED.h"
+#include "public.h"
 
 void LEDInit()
 {
@@ -14,25 +14,38 @@ void LEDInit()
 
 }	
 
-void LEDdisplay()
+void LEDdisplay(uint8_t times)
 { 
-	while(1)
+	uint8_t t;
+
+	/* 每次调用前清零打断标志 */
+	g_task_abort = 0;
+
+	for (t = 0; t < times && !g_task_abort; t++)
 	{
-	GPIO_Write(GPIOC, 0xfe); 
-		delay_ms(1000);//SysTick Timer Delay 1s
+		if (g_task_abort) break;
+		GPIO_Write(GPIOC, 0xfe); 
+		delay_ms(300); 
+		if (g_task_abort) break;
 		GPIO_Write(GPIOC, 0xfd); 
-		delay_ms(1000);// SysTick Timer Delay 1s
+		delay_ms(300); 
+		if (g_task_abort) break;
 		GPIO_Write(GPIOC, 0xfb); 
-		delay_ms(1000);// SysTick Timer Delay 1s
+		delay_ms(300); 
+		if (g_task_abort) break;
 		GPIO_Write(GPIOC, 0xf7); 
-		delay_ms(1000);// SysTick Timer Delay 1s
+		delay_ms(300); 
+		if (g_task_abort) break;
 		GPIO_Write(GPIOC, 0xef); 
-		delay_ms(1000);// SysTick Timer Delay 1s
+		delay_ms(300); 
+		if (g_task_abort) break;
 		GPIO_Write(GPIOC, 0xdf); 
-		delay_ms(1000);// SysTick Timer Delay 1s
+		delay_ms(300); 
+		if (g_task_abort) break;
 		GPIO_Write(GPIOC, 0xbf); 
-		delay_ms(1000);// SysTick Timer Delay 1s
+		delay_ms(300); 
+		if (g_task_abort) break;
 		GPIO_Write(GPIOC, 0x7f); 
-		delay_ms(1000);// SysTick Timer Delay 1s	
+		delay_ms(300); 	
 	}
 }

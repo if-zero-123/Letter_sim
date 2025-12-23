@@ -30,3 +30,6 @@
 .\output\usart.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\output\usart.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\output\usart.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\usart.o: .\user\public.h
+.\output\usart.o: .\APP\LED.h
+.\output\usart.o: .\APP\systick.h

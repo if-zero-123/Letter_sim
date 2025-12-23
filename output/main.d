@@ -33,4 +33,8 @@
 .\output\main.o: .\APP\systick.h
 .\output\main.o: .\APP\USART.H
 .\output\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\main.o: .\APP\shell_port.h
+.\output\main.o: .\APP\shell.h
+.\output\main.o: .\APP\shell_cfg.h
+.\output\main.o: .\APP\shell_cfg_user.h
 .\output\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
