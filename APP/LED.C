@@ -48,4 +48,5 @@ void LEDdisplay(uint8_t times)
 		GPIO_Write(GPIOC, 0x7f); 
 		delay_ms(300); 	
 	}
+	GPIO_Write(GPIOC, 0x00); 
 }
